@@ -17,6 +17,14 @@ function obtenerSoloLosMejores(estudiantes, nota1, nota2) {
   // obtenerSoloLosMejores(estudiantes, 15, 15); retorna => ["Fulanito Rodriguez", "Perengano Leiria"];
   //
   // Tu código:
+let newArray = [];
+
+  for (let i = 0; i < estudiantes.length; i++) {
+    if (estudiantes[i].check1 >= nota1 && estudiantes[i].check2 >= nota2) {
+      newArray.push(estudiantes[i].nombre + " " + estudiantes[i].apellido)
+    }
+  }
+  return newArray;
 }
 // No modifiques nada debajo de esta linea //
 
